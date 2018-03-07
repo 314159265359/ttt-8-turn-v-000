@@ -1,7 +1,8 @@
 def turn(board)
   puts "Please enter 1-9:"
-  #location = gets.strip.to_i
-  # if (location > 9 || location < 1)
+  index = gets.strip.to_i
+  if valid_move?(board,index)
+    move(board,index)
   #   turn(board)
   # end
 end
