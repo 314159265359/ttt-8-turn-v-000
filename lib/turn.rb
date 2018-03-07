@@ -1,7 +1,7 @@
 def turn(board)
   puts "Please enter 1-9:"
   valid = gets.strip.to_i.between?(1,9)
-  until valid
+  until !valid
     turn(board)
   end
 end
