@@ -1,5 +1,9 @@
 def turn(board)
   puts "Please enter 1-9:"
+  location = gets.strip
+  if location > 9 || location < 1
+    turn(board)
+  end
 end
 
 def valid_move?(board,index)
