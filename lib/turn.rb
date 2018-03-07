@@ -1,5 +1,5 @@
 def turn(board)
-  response = 0
+  response = 1
   until response.between?(1,9)
     puts "Please enter 1-9:"
     response = gets.strip
