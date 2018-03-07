@@ -1,10 +1,5 @@
 def turn(board)
   puts "Please enter 1-9:"
-  response = gets.strip
-  valid = response.to_i.between?(1,9)
-  while !valid
-    turn(board)
-  end
 end
 
 def valid_move?(board,index)
