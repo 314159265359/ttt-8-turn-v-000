@@ -1,6 +1,6 @@
 def turn(board)
   puts "Please enter 1-9:"
-  index = gets.strip.to_i
+  index = gets.strip.to_i - 1
   if valid_move?(board,index)
     move(board,index)
   else
