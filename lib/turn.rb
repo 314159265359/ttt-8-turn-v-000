@@ -1,8 +1,8 @@
 def turn(board)
-  response = 1
+  puts "Please enter 1-9:"
+  response = gets.strip
   until response.between?(1,9)
-    puts "Please enter 1-9:"
-    response = gets.strip
+    turn(board)
   end
 end
 
