@@ -3,8 +3,9 @@ def turn(board)
   index = gets.strip.to_i
   if valid_move?(board,index)
     move(board,index)
-  #   turn(board)
-  # end
+  else
+    turn(board)
+  end
 end
 
 def valid_move?(board,index)
